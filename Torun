@@ -1,0 +1,5 @@
+To run:
+cd shayrecabs_app
+flutter create --platforms=android,ios --org com.shayrecabs --project-name shayrecabs .
+flutter pub get
+flutter run --dart-define=API_URL=https://shayrecabs.com/api
