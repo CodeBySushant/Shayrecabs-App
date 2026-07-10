@@ -1,0 +1,75 @@
+name: shayrecabs
+description: shayreCabs — scheduled shared airport rides for Delhi NCR (IGI ⇄ Noida / Gurugram).
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Navigation
+  go_router: ^14.2.0
+
+  # Networking
+  dio: ^5.4.3
+  connectivity_plus: ^6.0.3
+
+  # Storage
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.2.3
+
+  # Payments (Razorpay Standard Checkout — same backend order/verify endpoints)
+  razorpay_flutter: ^1.3.7
+
+  # Media / device
+  image_picker: ^1.1.2
+  permission_handler: ^11.3.1
+  cached_network_image: ^3.3.1
+  package_info_plus: ^8.0.0
+  url_launcher: ^6.3.0
+
+  # UI polish
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  lottie: ^3.1.2
+
+  # Utils
+  intl: ^0.19.0
+  share_plus: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/
+
+# ── Native splash (run: dart run flutter_native_splash:create) ──
+flutter_native_splash:
+  color: "#0B0F1A"
+  color_dark: "#0B0F1A"
+  image: assets/images/shayrelogo.png
+  android_12:
+    color: "#0B0F1A"
+    image: assets/images/shayrelogo.png
+
+# ── Launcher icons (run: dart run flutter_launcher_icons) ──
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/shayrelogo.png
+  adaptive_icon_background: "#0B0F1A"
+  adaptive_icon_foreground: assets/images/shayrelogo.png
